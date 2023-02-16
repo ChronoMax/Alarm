@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Give input
+//main function
 func main() {
 	var input int
 	_input := GetUserInput()
@@ -10,6 +10,7 @@ func main() {
 	DoTheLoop(input)
 }
 
+//Gets the users input
 func GetUserInput() int {
 	var input int
 	fmt.Println("How many times should the alarm go off?")
@@ -17,6 +18,7 @@ func GetUserInput() int {
 	return input
 }
 
+//Uses the input from the user and displays the text
 func DoTheLoop(_input int) {
 	for i := 1; i <= _input; i++ {
 		fmt.Println("Alarm ", i, "!")
